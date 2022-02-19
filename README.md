@@ -1,10 +1,32 @@
 # ConfManager
 
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+
 To save time on the implementation of your configuration files, ConfManager allows you to serialize an object in an XML file. 
 
 The idea of using a serialized object in an XML file offers the possibility of setting up complex configurations (with array/list for example).
 
-## How to use it?
+## Installation
+
+Use NuGet ([ConfManager](https://www.nuget.org/packages/ConfManager/)) !
+
+Packet manager:
+```sh
+PM> Install-Package ConfManager -Version 2.0.0
+```
+
+.NET CLI:
+```sh
+> dotnet add package ConfManager --version 2.0.0
+```
+
+Paket CLI:
+```sh
+> paket add ConfManager --version 2.0.0
+```
+
+
+## Usage
 
 Here is the object we will use to manage the settings of my application:
 
@@ -119,3 +141,5 @@ License
 ----
 
 MIT
+
+![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
