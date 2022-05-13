@@ -12,17 +12,17 @@ Use NuGet ([ConfManager](https://www.nuget.org/packages/ConfManager/)) !
 
 Packet manager:
 ```sh
-PM> Install-Package ConfManager -Version 2.0.0
+PM> Install-Package ConfManager -Version 5.0.0
 ```
 
 .NET CLI:
 ```sh
-> dotnet add package ConfManager --version 2.0.0
+> dotnet add package ConfManager --version 5.0.0
 ```
 
 Paket CLI:
 ```sh
-> paket add ConfManager --version 2.0.0
+> paket add ConfManager --version 5.0.0
 ```
 
 
