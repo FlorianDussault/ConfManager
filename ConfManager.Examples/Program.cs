@@ -19,28 +19,16 @@ namespace ConfManager.Examples
             };
 
             // Save
-            ConfManager.Save("app.settings.xml", settings);
+            ConfWriter.Write("app.settings.xml", settings);
             // or
             settings.SaveSettings("app.settings.xml");
 
             // Load settings
-
-            MySettings mySettings = ConfManager.Load<MySettings>("app.settings.xml");
+            MySettings mySettings = ConfReader.Read<MySettings>("app.settings.xml");
 
             // And we can use the settings
             // Server server = new Server(mySettings.Server, mySettings.Port);
             // ...
         }
-    }
-
-    public class MySettings
-    {
-        public string ConnectionName { get; set; }
-        public bool Enabled { get; set; }
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Server { get; set; }
-        public int Port { get; set; }
-        public List<string> Paths;
     }
 }

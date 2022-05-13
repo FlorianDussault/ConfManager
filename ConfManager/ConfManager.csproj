@@ -23,7 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfManagerException.cs" />
-    <Compile Include="ConfManager.cs" />
+    <Compile Include="ConfReader.cs" />
+    <Compile Include="ConfWriter.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleSettingsExtension.cs" />
   </ItemGroup>
