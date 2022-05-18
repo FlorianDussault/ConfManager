@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>5.0.0.0</version>
+    <version>6.0.0.0</version>
     <title>ConfManager</title>
     <authors>Florian Dussault</authors>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
