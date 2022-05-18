@@ -12,17 +12,17 @@ Use NuGet ([ConfManager](https://www.nuget.org/packages/ConfManager/)) !
 
 Packet manager:
 ```sh
-PM> Install-Package ConfManager -Version 2.0.0
+PM> Install-Package ConfManager -Version 5.0.0
 ```
 
 .NET CLI:
 ```sh
-> dotnet add package ConfManager --version 2.0.0
+> dotnet add package ConfManager --version 5.0.0
 ```
 
 Paket CLI:
 ```sh
-> paket add ConfManager --version 2.0.0
+> paket add ConfManager --version 5.0.0
 ```
 
 
@@ -60,7 +60,7 @@ MySettings settings = new MySettings
 };
 
 // Save
-ConfManager.Save("app.settings.xml", settings);
+ConfWriter.Write("app.settings.xml", settings);
 // or
 settings.SaveSettings("app.settings.xml");
 ```
@@ -86,7 +86,7 @@ And.. ..here is the Settings file:
 Now to load the Settings we will use the  ``` Load ``` method:
 
  ```C#
-MySettings mySettings = ConfManager.Load<MySettings>("app.settings.xml");
+MySettings mySettings = ConfReader.Read<MySettings>("app.settings.xml");
 
 // We can use the settings
 // Server server = new Server(mySettings.Server, mySettings.Port);
